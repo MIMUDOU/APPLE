@@ -1,0 +1,305 @@
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'SF Pro';
+}
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: "SF pro", sans-serif;
+    padding-top: 60px;
+    background: url(apple\ logo\ gif.gif) no-repeat fixed 50% 50%;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+    font-size: 17px;
+    font-weight: 460;
+    line-height: 1.47059;
+    letter-spacing: -.022em;
+}
+
+
+/* Desktop Nav */
+
+.navbar {
+    position: absolute;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.navbar a {
+    color: white;
+}
+
+.navbar .name {
+    padding-left: 50px; 
+    background: url('animated-apple-logo-1.gif');
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.navbar .logo {
+    position: absolute;
+    padding-left: 30px;
+}
+.navbar .nav-links ul {
+    display: flex;
+}
+
+.navbar .nav-links ul li {
+    margin: 0 25px;
+}
+
+.navbar .nav-links {
+    font-size: 20px;
+    color: whitesmoke;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: opacity 400ms;
+}
+
+.navbar .nav-links:hover {
+    opacity: 1;
+    color: whitesmoke;
+}
+
+ .navbar li .active {
+    color: red;
+}
+
+li a {
+    transition: 1s;
+    color: #fff;
+}
+
+li a:hover {
+    color: aqua;
+    transition: 1s;
+}
+
+
+ .navbar .logo {
+    background-image: url('animated-apple-logo-1.gif');
+    position: absolute;
+}
+
+.navbar .nav-links ul li .active a {
+    color: red;
+    font-weight: 600px;
+}
+
+
+h3 {
+    position: absolute;
+    text-decoration: none;
+    color: white;
+    font-size: 6em;
+    margin-top: 500px;
+    margin-right: 500px;
+    text-align: center;
+}
+
+.navbar .logo {
+    background: url('animated-apple-logo-1.gif');
+    background-position: center;
+    height: 44px;
+    background-size: 100px;
+    width: 20px;
+    background-repeat: no-repeat;
+    color: white;
+    opacity: 0.8;
+    transition: opacity 400ms;
+    text-align: center;
+
+}
+
+.navbar .logo:hover {
+    opacity: 1;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+h6 {
+    font-family: 'AppleGaramond.ttf';
+    position: absolute;
+    text-decoration: none;
+    font-size: 3em;
+    color: white;
+    margin-top: 700px;
+    margin-right: 600px;
+    text-align: center;
+}
+
+.content {
+    text-align: center;
+}
+
+.content a {
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    font-size: 24px;
+    border: 2px solid #fff;
+    padding: 10px 40px;
+    border-radius: 50px;
+}
+
+
+
+
+
+
+
+
+/*
+
+.custom-btn {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 100px 250px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+  }
+
+  .btn-3 {
+    background: rgb(238, 0, 99);
+  background: linear-gradient(to right top, #000000, #32121f, #5f163b, #8d145e, #bc0d87, #ba44b3, #af68dc, #9a88ff, #3bafff, #00ceff, #00e7ff, #5ffbf1);;
+    width: 130px;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+    
+  }
+  .btn-3 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .btn-3:before,
+  .btn-3:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+     background: rgb(251, 2, 135);
+    transition: all 0.3s ease;
+  }
+  .btn-3:before {
+    height: 0%;
+    width: 2px;
+  }
+  .btn-3:after {
+    width: 0%;
+    height: 2px;
+  }
+  .btn-3:hover{
+     background: transparent;
+    box-shadow: none;
+  }
+  .btn-3:hover:before {
+    height: 100%;
+  }
+  .btn-3:hover:after {
+    width: 100%;
+  }
+  .btn-3 span:hover{
+     color: rgba(2,126,251,1);
+  }
+  .btn-3 span:before,
+  .btn-3 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+     background: rgba(2,126,251,1);
+    transition: all 0.3s ease;
+  }
+  .btn-3 span:before {
+    width: 2px;
+    height: 0%;
+  }
+  .btn-3 span:after {
+    width: 0%;
+    height: 2px;
+  }
+  .btn-3 span:hover:before {
+    height: 100%;
+  }
+  .btn-3 span:hover:after {
+    width: 100%;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*button
+.button {
+    display: inline-block;
+    background-color: #7b38d8;
+    border-radius: 10px;
+    border: 4px double #cccccc;
+    color: #eeeeee;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(255, 0, 140);
+}
+*/
+
+
+
+
+
